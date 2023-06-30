@@ -1,4 +1,4 @@
-import { describe } from "@jest/globals";
+// import { describe } from "@jest/globals";
 
 import {translateToMorseCode, translateToEnglish } from "./translate.js";
 

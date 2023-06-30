@@ -7,24 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/styles.css">
   <script src="./javascript/script.js" defer type="module"></script>
-  <title>Morse Code Translator</title>
+  <title> Morse Code Translator </title>
 </head>
 <body>
   <div class="translator">
+  
     <h1 class="translator__title">Morse Code Translator</h1>
+
+<!-----------------------------------------Input Field----------------------------------------->
     <div class="translator__input">
       <label for="text-input" class="translator__label">Enter English text or Morse Code:</label>
-      <textarea id="text-input" class="translator__textarea" placeholder="Enter text..." autofocus></textarea>
+      
+      <textarea id="text-input" class="translator__textarea" placeholder="Type your text (all in lower case) here to translate it to Morse.
+       For translating morse code each character separated with a space and each word separated with ' / ' " autofocus></textarea>
     </div>
+
+<!-----------------------------------------Output Field---------------------------------------->
     <div class="translator__output">
       <label for="translated-text" class="translator__label">Translated Text:</label>
       <textarea id="translated-text" class="translator__textarea" placeholder="Translated text..." readonly ></textarea>
     </div>
-    <div class="translator__actions">
+
+<!------------------------------------------Buttons-------------------------------------------->
+     <div class="translator__actions">
       <button id="translate-btn" class="translator__button">Translate</button>
       <button id="clear-btn" class="translator__button">Clear</button>
     </div>
+
   </div>
+  <!---------------footer------------------->
   <footer>
     <h4>Built by Amruta</h4>
   </footer>
