@@ -2,7 +2,6 @@ import {reverseMorseCodeDict ,translateToMorseCode, translateToEnglish } from ".
 
 // Event listener for translate button
 const translateBtn = document.getElementById('translate-btn');
-
 translateBtn.addEventListener('click', () => {
   const inputText = document.getElementById('text-input').value;
   const resultTextArea = document.getElementById('translated-text');
@@ -30,6 +29,12 @@ translateBtn.addEventListener('click', () => {
     }
   }
 });
+
+
+
+ 
+
+
 
 
 

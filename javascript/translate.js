@@ -9,11 +9,7 @@ Object.keys(morseCodeDict).forEach((char) => {
 
 // Translate English text to Morse Code
 export const translateToMorseCode = (text) => {
-    // if (inputText.match(/[0-9@$%^&*()_+={}|[\]\\:;"'<>,.?/-]/)) {
-
-    //     // Alert for invalid characters
-    //     throw new Error("Invalid input! Please enter valid English text without special characters or numbers.");
-    // }
+    
   const words = text.trim().toUpperCase().split(' ');
   const morseCodeArray = words.map(word => {
     const characters = word.split('');
