@@ -19,26 +19,23 @@ translateBtn.addEventListener('click', () => {
       resultTextArea.value = translatedText;
     }
   } else {
+
     // English to Morse Code translation
     if (inputText.match(/[0-9@$%^&*()_+={}|[\]\\:;"'<>,.?/#-]/)) {
+
       // Alert for invalid characters in English input
       alert("Invalid input! Please enter valid English text without special characters or numbers.");
-    } else {
+    } 
+    else {
+      
       const translatedText = translateToMorseCode(inputText);
       resultTextArea.value = translatedText;
     }
   }
 });
 
-
-
- 
-
-
-
-
-
 // Clear button click event
+
 const clearBtn = document.getElementById('clear-btn');
 clearBtn.addEventListener('click', () => {
   document.getElementById('text-input').value = '';
