@@ -1,8 +1,15 @@
 
 import {translateToMorseCode, translateToEnglish } from "./translate.js";
 
+
+const invalidEngErr = new Error("Text should contain english alphabet or space only for english to morse code translation");
+
+const invalidMorErr = new Error(
+  "Error: Please ensure that the code only consists of ., -, / or  space. Please separate each letter by space and words by '/'.",
+);
+
 describe("Testing translateToMorseCode function which translates English Text to Morse", () => {
-   const invalidEngErr = new Error("Text should contain english alphabet or space only for english to morse code translation");
+   
    it("should translate a single English character as expected", () => {
     expect(translateToMorseCode("a")).toBe(".-");
     expect(translateToMorseCode("s")).toBe("...");
@@ -35,9 +42,8 @@ describe("Testing translateToMorseCode function which translates English Text to
 });
 
 describe("Testing translateToEnglish function that translate Morse code to English text", () => {
-  const invalidMorErr = new Error(
-    "Error: Please ensure that the code only consists of ., -, / or  space. Please separate each letter by space and words by '/'.",
-  );
+
+  
   it("Should translate individual characters as expected", () => {
     expect(translateToEnglish(".-")).toBe("A");
   });
@@ -52,7 +58,7 @@ describe("Testing translateToEnglish function that translate Morse code to Engli
     expect(translateToEnglish (".-/ .-")).toBe("A A");
     expect(translateToEnglish ("     .-    ")).toBe("A");
   });
-  
+
   it("should translate a / to a space between words correctly", () => {
     expect(translateToEnglish ("/")).toBe(" ");
     expect(translateToEnglish (".- / .-")).toBe("A A");
