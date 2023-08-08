@@ -1,3 +1,5 @@
+### 👉 [Go to Morse Code Translator](https://amrutas-mct.netlify.app)
+
 ## Goals
 - Implementing the Javascript topics that I have learned through out the training such as Arrays, Iterators, Document Object Model (DOM), Object, Modules, and Unit Testing.
 
